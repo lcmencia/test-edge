@@ -1,0 +1,14 @@
+{
+  "name": "test-edge",
+  "version": "1.0.0",
+  "description": "RESTful API project with Node.js and Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luis Carlos Mencia (http://parageek.co)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
