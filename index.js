@@ -43,22 +43,39 @@ app.post('/api/product', (req, res) => {
     product.description = req.body.description
 
     product.save((err, productStored) => {
-        if(err) res.status(500).send({message:`Error al salvar en la base de datos: ${err}`})
+        if (err) res.status(500).send({message:`Error al salvar en la base de datos: ${err}`})
 
         res.status(200).send({product: productStored})
     })
 })
 
 app.put('/api/product/:productId', (req, res) => {
-    
+    let productId = req.params.productId
+    let update = req.body
+
+    Product.findByIdAndUpdate(productId, update, (err, productUpdated) => {
+        if (err) res.status(500).send({message: `Error al actualizar el producto: ${err}`})
+
+        res.status(200).send({product: productUpdated})
+    })
 })
 
 app.delete('/api/product/:productId', (req, res) => {
+    let productId = req.params.productId
+
+    Product.findById(productId, (err, product) => {
+        if (err) res.status(500).send({message: `Error al borrar el producto: ${err}`})
+
+        product.remove(err => {
+            if (err) res.status(500).send({message: `Error al borrar el producto: ${err}`})
+            res.status(200).send({message: 'El producto ha sido eliminado'})
+        })
+    })
     
 })
 
 mongoose.connect('mongodb://localhost:27017/shop',(err, res) => {
-    if(err) {
+    if (err) {
         return console.log(`Error al conectar a la base de datos: ${err}`)
     }
     console.log('Conexión a la base de datos establecida...')
