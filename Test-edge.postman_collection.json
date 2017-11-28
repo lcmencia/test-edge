@@ -1,0 +1,322 @@
+{
+	"id": "83903987-2c07-73f1-de7e-8a00598dada9",
+	"name": "Test-edge",
+	"description": "",
+	"order": [
+		"28e24c5e-a551-5ccb-2d97-e0d925b15613",
+		"a3d6df5e-2fe1-b43e-2f76-8c284a24d3fa",
+		"9d3879d1-98b3-3243-f600-1272a2992a33",
+		"80be4413-9940-05e9-c753-fda2ffa14801",
+		"be51273b-609f-aa6c-011a-813634fbc360",
+		"fc7c11b2-3497-f723-05a4-194eeb697b9f",
+		"6f7bc768-44a3-1454-3d5d-aff974222c4f",
+		"97058666-dcc5-0dc8-5494-d72711e2552f"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1511895155204,
+	"owner": "3237558",
+	"public": false,
+	"requests": [
+		{
+			"id": "28e24c5e-a551-5ccb-2d97-e0d925b15613",
+			"headers": "",
+			"headerData": [],
+			"url": "https://test-edge.herokuapp.com/api/signup",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "83903987-2c07-73f1-de7e-8a00598dada9",
+			"data": [
+				{
+					"key": "email",
+					"value": "lcmencia@parageek.co.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "displayName",
+					"value": "Luis Carlos Mencia",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "pass",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "https://test-edge.herokuapp.com/api/signup",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1511895581508,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "6f7bc768-44a3-1454-3d5d-aff974222c4f",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://test-edge.herokuapp.com/api/product/5a1db527e77bbe0004541aa1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "83903987-2c07-73f1-de7e-8a00598dada9",
+			"data": [
+				{
+					"key": "picture",
+					"value": "guru_ultrabook.png",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "https://test-edge.herokuapp.com/api/product/5a1db527e77bbe0004541aa1",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1511896613611,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "80be4413-9940-05e9-c753-fda2ffa14801",
+			"headers": "authorization: Baerer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1MTE4OTU2MjksImV4cCI6MTUxMzEwNTIyOX0.EkpqRP78YN3aoODHjA_sl4wPiDR2vKUEG4Bki9d4y6c\n",
+			"headerData": [
+				{
+					"key": "authorization",
+					"value": "Baerer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1MTE4OTU2MjksImV4cCI6MTUxMzEwNTIyOX0.EkpqRP78YN3aoODHjA_sl4wPiDR2vKUEG4Bki9d4y6c",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://test-edge.herokuapp.com/api/product",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "83903987-2c07-73f1-de7e-8a00598dada9",
+			"data": null,
+			"dataMode": "params",
+			"name": "https://test-edge.herokuapp.com/api/product",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1511896211008,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "97058666-dcc5-0dc8-5494-d72711e2552f",
+			"headers": "authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YTFkYjc3ZDRmYzA4YTAwMDQ2ZTg1ZTUiLCJpYXQiOjE1MTE4OTY5NTcsImV4cCI6MTUxMzEwNjU1N30.g_mZxVLeWuLjkRWfwGMGRTVbbsLfN8u0yi002-FSXq8\n",
+			"headerData": [
+				{
+					"key": "authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YTFkYjc3ZDRmYzA4YTAwMDQ2ZTg1ZTUiLCJpYXQiOjE1MTE4OTY5NTcsImV4cCI6MTUxMzEwNjU1N30.g_mZxVLeWuLjkRWfwGMGRTVbbsLfN8u0yi002-FSXq8",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://test-edge.herokuapp.com/api/private",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "83903987-2c07-73f1-de7e-8a00598dada9",
+			"data": null,
+			"dataMode": "params",
+			"name": "https://test-edge.herokuapp.com/api/private",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1511896987128,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "9d3879d1-98b3-3243-f600-1272a2992a33",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://test-edge.herokuapp.com/api/product",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "83903987-2c07-73f1-de7e-8a00598dada9",
+			"data": [
+				{
+					"key": "name",
+					"value": "Macbook pro",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "picture",
+					"value": "macbook.png",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "price",
+					"value": "1200",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "category",
+					"value": "computers",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "El portatil potente de Apple",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "https://test-edge.herokuapp.com/api/product",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1511895813487,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "a3d6df5e-2fe1-b43e-2f76-8c284a24d3fa",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://test-edge.herokuapp.com/api/signin",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "83903987-2c07-73f1-de7e-8a00598dada9",
+			"data": [
+				{
+					"key": "email",
+					"value": "lcmencia@parageek.co",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "pass",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "https://test-edge.herokuapp.com/api/signin",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1511895640013,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "be51273b-609f-aa6c-011a-813634fbc360",
+			"headers": "",
+			"headerData": [],
+			"url": "https://test-edge.herokuapp.com/api/product/5a1db2f5e77bbe0004541a9f",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "83903987-2c07-73f1-de7e-8a00598dada9",
+			"data": null,
+			"dataMode": "params",
+			"name": "https://test-edge.herokuapp.com/api/product/5a1db2f5e77bbe0004541a9f",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1511896245132,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "fc7c11b2-3497-f723-05a4-194eeb697b9f",
+			"headers": "",
+			"headerData": [],
+			"url": "https://test-edge.herokuapp.com/api/product/5a1db537e77bbe0004541aa2",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "83903987-2c07-73f1-de7e-8a00598dada9",
+			"data": null,
+			"dataMode": "params",
+			"name": "https://test-edge.herokuapp.com/api/product/5a1db537e77bbe0004541aa2",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1511896460433,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
